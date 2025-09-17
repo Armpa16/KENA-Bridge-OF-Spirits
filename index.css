@@ -132,7 +132,7 @@ iframe:hover{
 }
 .play1 {
     position: relative;
-    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+    display: inline-block; 
     margin-top: 50px;
 }
 h3{
@@ -143,21 +143,21 @@ h3{
 }
 .play1 img {
     display: block;
-    width: 100%; /* ปรับให้เต็ม container */
+    width: 100%; 
     height: auto;
 }
 .textonplay {
     position: absolute;
-    bottom: 0;           /* ชิดด้านล่าง */
+    bottom: 0;           
     left: 50%;
-    transform: translateX(-50%); /* จัดให้อยู่ตรงกลาง */
-    background: rgba(0, 0, 0, 0.7); /* พื้นหลังดำโปร่งใส */
-    color: #fff;          /* ตัวอักษรสีขาว */
+    transform: translateX(-50%); 
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;          
     text-align: center;
-    width: 100%;          /* กินเต็มความกว้างรูป */
+    width: 100%;       
     height: 80px;
     box-sizing: border-box;
-    border-radius: 0 0 20px 20px; /* มุมล่างโค้ง */
+    border-radius: 0 0 20px 20px;
 }
 .box2{
     display: flex;
@@ -166,16 +166,16 @@ h3{
 }
 .play2 {
     position: relative;
-    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+    display: inline-block; 
 }
 .play3 {
     position: relative;
-    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+    display: inline-block; 
     margin-top: 20px;
 }
 .play2 img {
     display: block;
-    width: 100%; /* ปรับให้เต็ม container */
+    width: 100%; 
     height: auto;
 }
 .play1, .play2, .play3, .play4, .play5 {
@@ -192,7 +192,7 @@ h3{
     height: auto;
     transition: all 0.5s ease;
     border-radius: 10px;
-    filter: brightness(0.8); /* ตอนปกติทำให้รูปมืดลงเล็กน้อย */
+    filter: brightness(0.8); 
 }
 
 .play1:hover img,
@@ -200,8 +200,8 @@ h3{
 .play3:hover img,
 .play4:hover img,
 .play5:hover img {
-    transform: scale(1.05);       /* ขยายเล็กน้อย */
-    filter: brightness(1.1);      /* ทำให้รูปสว่างขึ้น */
+    transform: scale(1.05);   
+    filter: brightness(1.1);    
     cursor: pointer;
 }
 
@@ -210,7 +210,7 @@ h3{
 .play3:hover,
 .play4:hover,
 .play5:hover {
-    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* เพิ่มเงาสวย ๆ */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 .box3{
     display: flex;
@@ -220,24 +220,35 @@ h3{
 }
 .play4 {
     position: relative;
-    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+    display: inline-block; 
 }
 .play5 {
     position: relative;
-    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+    display: inline-block;
 }
-.news{
+.news {
     width: 100%;
-    height: 1200px;
+    min-height: 1200px; 
     background-image: url('news.png');
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center; 
+    box-sizing: border-box;
+}
+.boxnews {
+    max-width: 1280px; 
+    width: 100%;       
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 30px;
 }
 .boxon{
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .textnews{
     color: white;
@@ -268,8 +279,8 @@ h3{
 }
 .new3{
     display: flex;
-    margin-top: 20px;
-    margin-left: 110px;
+    margin-top: -5px;
+    /* margin-left: 110px; */
 }
 .new3 img{
     border-radius: 20px 0 0 20px;
@@ -279,6 +290,7 @@ h3{
     border-radius: 0 20px 20px 0;
     height: 400px;
     width: 660px;
+    flex: 1; 
 }
 .new3 h3 {
     color: black;
@@ -293,8 +305,8 @@ h3{
     color: black;
     padding: 10px;
     font-size: 16px;
+    line-height: 1.6; 
     margin-left: 30px;
-    line-height: 1.6; /* กำหนดระยะห่างบรรทัด */
 }
 .new1:hover, .new2:hover, .new3:hover {
     transform: scale(1.01);
@@ -303,16 +315,15 @@ h3{
 }
 .readmore{
     color: rgb(0, 0, 0);
-    margin: 20px auto 0; /* auto จะจัดกลางแนวนอน */
-    font-size: 20px;
+    margin: 20px auto 0; 
     text-align: center;
     cursor: pointer;
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    background: rgb(255, 255, 255); /* ใส่สีพื้นหลังเพื่อให้เห็นปุ่มชัด */
+    background: rgb(255, 255, 255);
     display: block;
-    line-height: 50px; /* ทำให้ข้อความอยู่ตรงกลางปุ่มแนวตั้ง */
+    line-height: 50px; 
 }
 .readmore:hover{
     color: rgb(255, 255, 255);
@@ -346,7 +357,7 @@ h3{
 }
 
 .marquee-content img {
-  height: 100px; /* ปรับขนาดตามต้องการ */
+  height: 100px; 
   border-radius: 10px;
   transition: transform 0.3s;
 }
@@ -374,8 +385,7 @@ h3{
   100% { transform: translateX(-50%); }
 }
 .contact {
-    background: #111;          /* พื้นหลังสีเข้ม */
-    color: #fff;
+    background: #111;        
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 30px;
@@ -392,7 +402,7 @@ h3{
 .contact h3 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #ffcc00; /* สีเหลืองทอง */
+    color: #ffcc00; 
 }
 
 .contact a {
