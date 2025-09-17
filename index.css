@@ -323,12 +323,11 @@ h3{
     border-radius: 10px;
     background: rgb(255, 255, 255);
     display: block;
-    line-height: 50px; 
 }
 .readmore:hover{
     color: rgb(255, 255, 255);
     background: rgb(0, 0, 0);
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: all 0.3s ease;
 }
 .reword {
