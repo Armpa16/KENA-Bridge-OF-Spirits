@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 0 90px;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.menu a:hover{
+    color: #ffffff;
+    opacity: 100%;
+}
+.menu a.active{
+    color: #ffffff;
+    opacity: 100%;
+}
+.banner{
+    width: 100%;
+    height: 720px;
+    background-image: url('Banner.png');
+    background-size: cover;
+    background-position: center;
+}
+.banner h1{
+    color: white;
+    padding-top: 200px;
+    font-size: 40px;
+    margin-left: 90px;
+    font-weight: bold;
+}
+.banner h2{
+    color: white;
+    padding-top: 90px;
+    font-size: 35px;
+    margin-left: -1000px;
+    font-weight: bold;
+}
+.banner p{
+    color: white;
+    padding-top: 50px;
+    font-size: 30px;
+    margin-left: 90px;
+}
+.play{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.boxplay{
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.boxplay:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.about{
+    width: 100%;
+    height: 1000px;
+    background-color: #000000;
+}
+h2{
+    color: white;
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.about p{
+    color: white;
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+iframe{
+    display: block;
+    margin: 50px auto;
+    border-radius: 15px;
+}
+iframe:hover{
+    transform: scale(1.01);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}   
+.box1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.gameplay{
+    width: 100%;
+    height: 1840px;
+    background-image: url('gameplay.png');
+    background-size: cover;
+    background-position: center;
+}
+.gameplay p{
+    color: white;
+    padding-top: 50px;
+    font-size: 30px;
+    margin-left: 110px;
+}
+.play1 {
+    position: relative;
+    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+    margin-top: 50px;
+}
+h3{
+    color: white;
+    padding-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+.play1 img {
+    display: block;
+    width: 100%; /* ปรับให้เต็ม container */
+    height: auto;
+}
+.textonplay {
+    position: absolute;
+    bottom: 0;           /* ชิดด้านล่าง */
+    left: 50%;
+    transform: translateX(-50%); /* จัดให้อยู่ตรงกลาง */
+    background: rgba(0, 0, 0, 0.7); /* พื้นหลังดำโปร่งใส */
+    color: #fff;          /* ตัวอักษรสีขาว */
+    text-align: center;
+    width: 100%;          /* กินเต็มความกว้างรูป */
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px; /* มุมล่างโค้ง */
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.play2 {
+    position: relative;
+    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+}
+.play3 {
+    position: relative;
+    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+    margin-top: 20px;
+}
+.play2 img {
+    display: block;
+    width: 100%; /* ปรับให้เต็ม container */
+    height: auto;
+}
+.play1, .play2, .play3, .play4, .play5 {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.play1 img, .play2 img, .play3 img, .play4 img, .play5 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    filter: brightness(0.8); /* ตอนปกติทำให้รูปมืดลงเล็กน้อย */
+}
+
+.play1:hover img,
+.play2:hover img,
+.play3:hover img,
+.play4:hover img,
+.play5:hover img {
+    transform: scale(1.05);       /* ขยายเล็กน้อย */
+    filter: brightness(1.1);      /* ทำให้รูปสว่างขึ้น */
+    cursor: pointer;
+}
+
+.play1:hover,
+.play2:hover,
+.play3:hover,
+.play4:hover,
+.play5:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* เพิ่มเงาสวย ๆ */
+}
+.box3{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.play4 {
+    position: relative;
+    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+}
+.play5 {
+    position: relative;
+    display: inline-block; /* ทำให้บล็อคพอดีกับรูป */
+}
+.news{
+    width: 100%;
+    height: 1200px;
+    background-image: url('news.png');
+    background-size: cover;
+    background-position: center;
+}
+.boxon{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.textnews{
+    color: white;
+    height: 150px;
+}
+.new1{
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.new1 h3,.new2 h3{
+    color: black;
+    padding: 10px;
+    font-size: 25px;
+}
+.new1 p,.new2 p{
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 30px;
+}
+.new2{
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.new3{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+.new3 img{
+    border-radius: 20px 0 0 20px;
+}
+.new3 .textnews{
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    height: 400px;
+    width: 660px;
+}
+.new3 h3 {
+    color: black;
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 90px;
+    display: flex;
+    margin-left: 30px;
+}
+
+.new3 p {
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 30px;
+    line-height: 1.6; /* กำหนดระยะห่างบรรทัด */
+}
+.new1:hover, .new2:hover, .new3:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.readmore{
+    color: rgb(0, 0, 0);
+    margin: 20px auto 0; /* auto จะจัดกลางแนวนอน */
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255); /* ใส่สีพื้นหลังเพื่อให้เห็นปุ่มชัด */
+    display: block;
+    line-height: 50px; /* ทำให้ข้อความอยู่ตรงกลางปุ่มแนวตั้ง */
+}
+.readmore:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.reword {
+  text-align: center;
+  padding: 40px 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.reword h2 {
+  margin-bottom: 20px;
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+.marquee-content {
+  display: inline-flex;
+  gap: 30px;
+}
+
+.marquee-content img {
+  height: 100px; /* ปรับขนาดตามต้องการ */
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.marquee-content img:hover {
+  transform: scale(1.1);
+}
+
+/* อนิเมชั่นเลื่อน */
+.marquee-right .marquee-content {
+  animation: marqueeRight 20s linear infinite;
+}
+
+.marquee-left .marquee-content {
+  animation: marqueeLeft 20s linear infinite;
+}
+
+@keyframes marqueeRight {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes marqueeLeft {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.contact {
+    background: #111;          /* พื้นหลังสีเข้ม */
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.contact .logo {
+    max-width: 120px;
+    margin: 0 auto 20px auto;
+    margin-top: 45px;
+}
+
+.contact h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffcc00; /* สีเหลืองทอง */
+}
+
+.contact a {
+    display: block;
+    color: #bbb;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.3);
+}
